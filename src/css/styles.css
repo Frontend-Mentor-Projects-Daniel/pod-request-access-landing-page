@@ -59,22 +59,92 @@ select {
 --------------------*/
 :root {
   /* COLOURS */
+  --clr-medium-aquamarine: 157, 74%, 62%;
+  --clr-tuna: 225, 26%, 23%;
+  --clr-mirage: 224, 35%, 11%;
+  --clr-white: 0, 0%, 100%;
+  --clr-marble-blue: 225, 21%, 45%;
+  --clr-periwinkle-grey: 225, 40%, 83%;
 
   /* FONT FAMILY */
+  --ff-chivo: 'Chivo', sans-serif;
 
   /* FONT SIZE */
+  --fs-title: 1.625rem;
+  --fs-body: 0.9375rem;
+
+  /* LINE HEIGHT */
+  --lh-title: 2.375rem;
+  --lh-body: 1.5625rem;
 
   /* FONT WEIGHT */
+  --fw-regular: 400;
+}
+
+@media only screen and (min-width: 48em) {
+  :root {
+    /* FONT SIZE */
+    --fs-title: 3rem;
+    --fs-body: 1.125rem;
+
+    /* LINE HEIGHT */
+    --lh-title: 3.5rem;
+    --lh-body: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  :root {
+    /* FONT SIZE */
+    --fs-title: 3.25rem;
+    --fs-body: 1.125rem;
+
+    /* LINE HEIGHT */
+    --lh-title: 3.875rem;
+    --lh-body: 1.75rem;
+  }
 }
 
 /**------------------- 
 **    UTILITIES
 --------------------*/
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 
 /**------------------- 
 **     GENERAL
 --------------------*/
 body {
+  background-color: hsl(var(--clr-mirage));
+  background-image: url(../assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: 23.4375rem 41.6875rem;
+  font-family: var(--ff-chivo);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+}
+
+@media only screen and (min-width: 48em) {
+  body {
+    background-image: url(../assets/tablet/image-host.jpg);
+    background-size: 30.6875rem 47.9375rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  body {
+    background-image: url(../assets/desktop/image-host.jpg);
+    background-size: 55.5rem 40rem;
+  }
 }
 
 .main {
