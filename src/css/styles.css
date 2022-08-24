@@ -120,32 +120,99 @@ select {
   border: 0 !important;
 }
 
-/**------------------- 
-**     GENERAL
---------------------*/
-body {
-  background-color: hsl(var(--clr-mirage));
-  background-image: url(../assets/mobile/image-host.jpg);
-  background-repeat: no-repeat;
-  background-size: 23.4375rem 41.6875rem;
-  font-family: var(--ff-chivo);
-  font-size: var(--fs-body);
-  font-weight: var(--fw-regular);
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 @media only screen and (min-width: 48em) {
-  body {
-    background-image: url(../assets/tablet/image-host.jpg);
-    background-size: 30.6875rem 47.9375rem;
+  .container {
+    padding-left: 2.4375rem;
+    padding-right: 2.4375rem;
   }
 }
 
 @media only screen and (min-width: 90em) {
-  body {
-    background-image: url(../assets/desktop/image-host.jpg);
-    background-size: 55.5rem 40rem;
+  .container {
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
   }
 }
 
-.main {
+/**------------------- 
+**     GENERAL
+--------------------*/
+body {
+  font-family: var(--ff-chivo);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+
+  max-width: 1440px;
+  position: relative;
+}
+
+.bg-wrapper {
+  background-image: url(../assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  /* TODO: get rid of this later */
+  min-height: 100vh;
+  mix-blend-mode: screen;
+  padding-top: 3.875rem;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: hsl(var(--clr-mirage), 0.9);
+  z-index: -1;
+}
+
+@media only screen and (min-width: 48em) {
+  body {
+    background-color: hsl(var(--clr-mirage));
+  }
+
+  .bg-wrapper {
+    background-image: url(../assets/tablet/image-host.jpg);
+    background-position: top right;
+    background-size: 30.6875rem 47.9375rem;
+    mix-blend-mode: unset;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .bg-wrapper {
+    background-image: url(../assets/desktop/image-host.jpg);
+    background-position: right top 3.875rem;
+    background-size: 55.5rem 40rem;
+
+    max-width: 90rem;
+  }
+}
+
+/**------------------- 
+**       LOGO
+--------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 48em) {
+  .header {
+    justify-content: flex-start;
+  }
 }
