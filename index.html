@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
 
     <!-- JS -->
-    <script src="./src/components/Logo/Logo.js" defer></script>
+    <script src="./src/components/Logo/Logo.js" type="module"></script>
+    <script src="./src/components/Info/Info.js" type="module"></script>
 
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
@@ -33,13 +34,13 @@
       <header class="header container">
         <logo-component></logo-component>
       </header>
+
+      <main class="main container">
+        <info-component></info-component>
+      </main>
     </div>
 
-    <!-- Publish your podcasts everywhere.
-
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
-
+    <!-- 
   Request access -->
   </body>
 </html>

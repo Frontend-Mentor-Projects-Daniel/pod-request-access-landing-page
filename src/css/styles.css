@@ -128,14 +128,14 @@ select {
 @media only screen and (min-width: 48em) {
   .container {
     padding-left: 2.4375rem;
-    padding-right: 2.4375rem;
+    /* padding-right: 2.4375rem; */
   }
 }
 
 @media only screen and (min-width: 90em) {
   .container {
     padding-left: 10.3125rem;
-    padding-right: 10.3125rem;
+    /* padding-right: 10.3125rem; */
   }
 }
 
@@ -156,9 +156,6 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-
-  /* TODO: get rid of this later */
-  min-height: 100vh;
   mix-blend-mode: screen;
   padding-top: 3.875rem;
   width: 100%;
@@ -214,5 +211,31 @@ body {
 @media only screen and (min-width: 48em) {
   .header {
     justify-content: flex-start;
+  }
+}
+
+/**------------------- 
+**      MAIN
+--------------------*/
+.main {
+  margin: 0 auto;
+  margin-top: 3.5625rem;
+  max-width: clamp(23ch, 100%, 41ch);
+}
+
+@media only screen and (min-width: 48em) {
+  .main {
+    background-color: hsl(var(--clr-mirage));
+    margin-top: 9.5rem;
+    /* max-width: 731px; */
+    max-width: clamp(23ch, 100%, 61ch);
+    padding-top: 5.8125rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .main {
+    /* max-width: 1053px; */
+    max-width: clamp(23ch, 100%, 81ch);
   }
 }
