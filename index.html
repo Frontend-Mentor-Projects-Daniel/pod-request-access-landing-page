@@ -30,10 +30,7 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
 
     <!-- JS -->
-    <script src="./src/components/Logo/Logo.js" type="module"></script>
-    <script src="./src/components/Info/Info.js" type="module"></script>
-    <script src="./src/components/Podcasts/Podcasts.js" type="module"></script>
-    <script src="./src/components/Form/Form.js" type="module"></script>
+    <script src="./src/js/dottedImage.js" defer></script>
     <script
       src="./src/components/PodcastForm/PodcastForm.js"
       type="module"
@@ -50,10 +47,10 @@
 
       <main class="main container">
         <podcast_form-component></podcast_form-component>
+        <div class="image-dotted-pattern" data-dotted-image>
+          <img src="./src/assets/desktop/bg-pattern-dots.svg" alt="" />
+        </div>
       </main>
-      <!-- <div class="image-dotted-pattern">
-        <img src="./src/assets/desktop/bg-pattern-dots.svg" alt="" />
-      </div> -->
     </div>
   </body>
 </html>

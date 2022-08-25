@@ -128,6 +128,10 @@ select {
 .error--message {
 }
 
+.hide {
+  display: none;
+}
+
 @media only screen and (min-width: 48em) {
   .container {
     padding-left: 2.4375rem;
@@ -230,6 +234,7 @@ body {
   max-width: 422px;
   margin: 0 auto;
   margin-top: 3.5rem;
+  position: relative;
 }
 
 @media only screen and (min-width: 48em) {
@@ -254,13 +259,14 @@ body {
 @media only screen and (min-width: 48em) {
   .image-dotted-pattern {
     position: absolute;
-    bottom: 0;
+    bottom: -20.5625rem;
     left: 0;
   }
 }
 
 @media only screen and (min-width: 90em) {
   .image-dotted-pattern {
-    left: 83%;
+    bottom: 0;
+    left: 84%;
   }
 }
