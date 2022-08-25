@@ -41,11 +41,6 @@
   }
 }
 
-@media only screen and (min-width: 90em) {
-  .podcast-form {
-  }
-}
-
 /**------------------- 
 **   INFO COMPONENT
 --------------------*/
@@ -114,9 +109,6 @@
   position: relative;
 }
 
-.form-control {
-}
-
 .input-email {
   border: none;
   background: hsl(var(--clr-tuna));
@@ -140,7 +132,12 @@
 }
 
 .msg {
-  display: none;
+  color: hsl(0, 96%, 61%);
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: var(--fw-regular);
+  line-height: 0.875rem;
+  transform: translateX(1.875rem);
 }
 
 .btn--aquamarine {
