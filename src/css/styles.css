@@ -218,6 +218,11 @@ body {
 **      MAIN
 --------------------*/
 .main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 2.0625rem auto;
+  align-items: end;
+
   margin: 0 auto;
   margin-top: 3.5625rem;
   max-width: clamp(23ch, 100%, 41ch);
