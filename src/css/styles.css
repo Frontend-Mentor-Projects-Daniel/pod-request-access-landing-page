@@ -135,14 +135,12 @@ select {
 @media only screen and (min-width: 48em) {
   .container {
     padding-left: 2.4375rem;
-    /* padding-right: 2.4375rem; */
   }
 }
 
 @media only screen and (min-width: 90em) {
   .container {
     padding-left: 10.3125rem;
-    /* padding-right: 10.3125rem; */
   }
 }
 
@@ -150,12 +148,14 @@ select {
 **     GENERAL
 --------------------*/
 body {
+  display: flex;
+  justify-content: flex-end;
+
   font-family: var(--ff-chivo);
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
-
-  max-width: 1440px;
   position: relative;
+  width: 100vw;
 }
 
 .bg-wrapper {
@@ -192,6 +192,10 @@ body {
     background-repeat: no-repeat;
     background-size: 30.6875rem 47.9375rem;
     mix-blend-mode: unset;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 53rem;
   }
 
   .overlay {
