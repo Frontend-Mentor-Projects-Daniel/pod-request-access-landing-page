@@ -33,7 +33,6 @@
   display: none;
 }
 
-/* TODO: move the shared styles (.btn) to the global style sheet */
 .btn--aquamarine {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -49,7 +48,4 @@
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.75rem;
-}
-
-.btn--aquamarine:hover {
 }

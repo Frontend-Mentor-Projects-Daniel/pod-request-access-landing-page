@@ -125,9 +125,6 @@ select {
   padding-right: 1.5rem;
 }
 
-.error--message {
-}
-
 .hide {
   display: none !important;
 }
