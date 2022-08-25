@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-control {
+}
+
+.input-email {
+  border: none;
+  background: hsl(var(--clr-tuna));
+  border-radius: 1.75rem;
+  color: hsl(var(--clr-white));
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  padding: 0.6rem;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.input-email::placeholder {
+  color: hsl(var(--clr-white));
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.msg {
+  display: none;
+}
+
+/* TODO: move the shared styles (.btn) to the global style sheet */
+.btn--aquamarine {
+  background: hsl(var(--clr-medium-aquamarine));
+  border: none;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  border-radius: 1.75rem;
+  padding: 0.6rem;
+
+  /* text */
+  color: hsl(var(--clr-mirage));
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+.btn--aquamarine:hover {
+}

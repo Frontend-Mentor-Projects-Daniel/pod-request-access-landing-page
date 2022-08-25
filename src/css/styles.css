@@ -125,6 +125,15 @@ select {
   padding-right: 1.5rem;
 }
 
+.error--message {
+}
+
+.btn {
+}
+
+.btn:hover {
+}
+
 @media only screen and (min-width: 48em) {
   .container {
     padding-left: 2.4375rem;
@@ -153,12 +162,13 @@ body {
 
 .bg-wrapper {
   background-image: url(../assets/mobile/image-host.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: top center;
   background-size: cover;
   mix-blend-mode: screen;
   padding-top: 3.875rem;
   width: 100%;
+  min-height: 100vh;
 }
 
 .overlay {
@@ -180,6 +190,7 @@ body {
   .bg-wrapper {
     background-image: url(../assets/tablet/image-host.jpg);
     background-position: top right;
+    background-repeat: no-repeat;
     background-size: 30.6875rem 47.9375rem;
     mix-blend-mode: unset;
   }
@@ -220,11 +231,12 @@ body {
 .main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 2.0625rem auto;
+  grid-template-rows: auto 2.0625rem minmax(156px, auto);
   align-items: end;
 
   margin: 0 auto;
   margin-top: 3.5625rem;
+  margin-bottom: 5.875rem;
   max-width: clamp(23ch, 100%, 41ch);
 }
 
@@ -232,7 +244,6 @@ body {
   .main {
     background-color: hsl(var(--clr-mirage));
     margin-top: 9.5rem;
-    /* max-width: 731px; */
     max-width: clamp(23ch, 100%, 61ch);
     padding-top: 5.8125rem;
   }
@@ -240,7 +251,6 @@ body {
 
 @media only screen and (min-width: 90em) {
   .main {
-    /* max-width: 1053px; */
     max-width: clamp(23ch, 100%, 81ch);
   }
 }
