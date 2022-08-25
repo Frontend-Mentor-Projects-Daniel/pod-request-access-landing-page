@@ -78,7 +78,7 @@ select {
   --lh-body: 1.5625rem;
 
   /* FONT WEIGHT */
-  --fw-regular: 400;
+  --fw-regular: 300;
 }
 
 @media only screen and (min-width: 48em) {
@@ -126,12 +126,6 @@ select {
 }
 
 .error--message {
-}
-
-.btn {
-}
-
-.btn:hover {
 }
 
 @media only screen and (min-width: 48em) {
@@ -230,30 +224,27 @@ body {
 **      MAIN
 --------------------*/
 .main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 2.0625rem minmax(156px, auto);
-  align-items: end;
+  display: flex;
+  justify-content: center;
 
+  max-width: 422px;
   margin: 0 auto;
-  margin-top: 3.5625rem;
-  margin-bottom: 5.875rem;
-  max-width: clamp(23ch, 100%, 41ch);
+  margin-top: 3.5rem;
 }
 
 @media only screen and (min-width: 48em) {
   .main {
-    background-color: hsl(var(--clr-mirage));
-    margin-top: 9.5rem;
-    margin-bottom: 0;
-    max-width: clamp(23ch, 100%, 61ch);
-    padding-top: 5.8125rem;
+    align-items: flex-end;
+
+    height: 40.9375rem;
+    max-width: 100%;
+    margin: auto auto;
   }
 }
 
 @media only screen and (min-width: 90em) {
   .main {
-    max-width: clamp(23ch, 100%, 81ch);
+    justify-content: flex-start;
   }
 }
 

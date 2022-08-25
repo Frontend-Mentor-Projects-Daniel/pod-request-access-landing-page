@@ -1,2 +1,43 @@
 <link rel="stylesheet" href="./src/css/styles.css" />
 <link rel="stylesheet" href="./src/components/PodcastForm/PodcastForm.css" />
+
+<div class="podcast-form">
+  <!-- Info Component -->
+  <div class="info__content">
+    <h1 class="info__title">Publish your podcasts <span>everywhere.</span></h1>
+    <p class="info__text">
+      Upload your audio to Pod with a single click. We’ll then distribute your
+      podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
+      more!
+    </p>
+  </div>
+
+  <!-- Podcasts Component -->
+  <div class="podcasts">
+    <div class="podcast podcast--spotify">
+      <img src="./src/assets/desktop/spotify.svg" alt="" />
+    </div>
+
+    <div class="podcast podcast--apple">
+      <img src="./src/assets/desktop/apple-podcast.svg" alt="" />
+    </div>
+
+    <div class="podcast podcast--google">
+      <img src="./src/assets/desktop/google-podcasts.svg" alt="" />
+    </div>
+
+    <div class="podcast podcast--pocket-cast">
+      <img src="./src/assets/desktop/pocket-casts.svg" alt="" />
+    </div>
+  </div>
+
+  <!-- Form Component -->
+  <form class="form">
+    <div class="form-control">
+      <label for="email" class="sr-only">Email Address</label>
+      <input type="text" class="input-email" placeholder="Email address" />
+      <span class="msg error--message">Oops! Please check your email</span>
+    </div>
+    <button class="btn--aquamarine" type="submit">Request access</button>
+  </form>
+</div>
