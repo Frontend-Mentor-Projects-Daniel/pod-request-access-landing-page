@@ -167,6 +167,7 @@ body {
   background-size: cover;
   mix-blend-mode: screen;
   padding-top: 3.875rem;
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
@@ -244,6 +245,7 @@ body {
   .main {
     background-color: hsl(var(--clr-mirage));
     margin-top: 9.5rem;
+    margin-bottom: 0;
     max-width: clamp(23ch, 100%, 61ch);
     padding-top: 5.8125rem;
   }
@@ -252,5 +254,22 @@ body {
 @media only screen and (min-width: 90em) {
   .main {
     max-width: clamp(23ch, 100%, 81ch);
+  }
+}
+
+/**------------------- 
+**   DOTTED IMAGE
+--------------------*/
+@media only screen and (min-width: 48em) {
+  .image-dotted-pattern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .image-dotted-pattern {
+    left: 83%;
   }
 }

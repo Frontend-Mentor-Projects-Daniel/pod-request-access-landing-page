@@ -35,6 +35,9 @@
 
 /* TODO: move the shared styles (.btn) to the global style sheet */
 .btn--aquamarine {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
   background: hsl(var(--clr-medium-aquamarine));
   border: none;
   box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
